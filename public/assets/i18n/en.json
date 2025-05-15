@@ -1,0 +1,10 @@
+{
+  "Profile": {
+    "Title": "User Profile",
+    "FullName": "Full Name: ",
+    "Address": "Address: ",
+    "Rating": "Rating: ",
+    "Payment": "Payment Method: ",
+    "Notifications": "Notifications: "
+  }
+}

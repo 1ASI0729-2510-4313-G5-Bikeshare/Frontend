@@ -1,0 +1,44 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" opened class="custom-sidenav">
+    <div class="logo-container">
+      <img src="assets/images/bikeshare-logo.png" alt="BikeShare Logo" class="logo">
+    </div>
+
+      <mat-nav-list>
+        <mat-list-item class="sidenav-item">
+          <a routerLink="/profile" class="button-item">
+            <mat-icon class="icon-style">home</mat-icon>Home
+            <!--{{'main.home' | translate}}-->
+          </a>
+        </mat-list-item>
+        <mat-list-item class="sidenav-item">
+          <a routerLink="/profile" class="button-item">
+            <mat-icon class="icon-style">folder</mat-icon>My services
+            <!--{{'main.home' | translate}}-->
+          </a>
+        </mat-list-item>
+      <mat-list-item class="sidenav-item">
+        <a routerLink="/profile" class="button-item">
+          <mat-icon class="icon-style">person</mat-icon>Profile
+          <!--{{'main.home' | translate}}-->
+        </a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar class="toolbar-fixed">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>BikeShare</span>
+      <span class="spacer"></span>
+      <div style="display: flex; flex-direction: column; height: 100%;">
+        <div style="margin:auto ; margin-top: 10px">
+          <app-language-switcher></app-language-switcher>
+        </div>
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

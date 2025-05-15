@@ -1,0 +1,10 @@
+{
+  "Profile": {
+    "Title": "Perfil de usuario",
+    "FullName": "Nombre completo: ",
+    "Address": "Dirección: ",
+    "Rating": "Calificación: ",
+    "Payment": "Método de pago: ",
+    "Notifications": "Notificaciones: "
+  }
+}

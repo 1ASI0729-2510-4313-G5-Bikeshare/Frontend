@@ -1,3 +1,9 @@
 import { Routes } from '@angular/router';
+import {ProfileComponent} from './profile/pages/profile/profile.component';
 
-export const routes: Routes = [];
+const baseTitle = 'BikeShare';
+
+export const routes: Routes = [
+  { path: 'profile', component: ProfileComponent, title: `${baseTitle} | Profile` },
+
+];
