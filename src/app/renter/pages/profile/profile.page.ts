@@ -9,7 +9,7 @@ import { Profile }        from '../../model/profile.entity';
 import { User }           from '../../model/user.entity';
 import { ProfileService } from '../../services/profile.service';
 import { UserService }    from '../../services/user.service';
-import { ProfileEditComponent } from '../profile/profile-edit/profile-edit.component';
+import { ProfileEditComponent } from './/profile-edit/profile-edit.component';
 
 @Component({
   selector: 'app-profile-page',
