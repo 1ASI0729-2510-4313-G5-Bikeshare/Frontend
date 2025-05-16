@@ -1,0 +1,76 @@
+<div class="home-container">
+  <aside class="sidebar">
+    <!-- Toggle icon -->
+    <div class="menu-toggle">
+      <i class="pi pi-bars"></i>
+    </div>
+    <!-- Logo -->
+    <img src="assets/images/bikeshare-logo.png" alt="BikeShare logo" class="logo">
+    <hr>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><i class="pi pi-home"></i> <a routerLink="/alquilar/home">Home</a></li>
+        <li><i class="pi pi-map"></i> <a routerLink="/alquilar/map">My Bikes</a></li>
+        <li><i class="pi pi-user"></i> <a routerLink="/alquilar/profile">Profile</a></li>
+        <li><i class="pi pi-headset"></i> <a routerLink="/alquilar/support">Support</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Add a Bike</h1>
+        <p>Manage your listedBikes.</p>
+        <button class="btn-find">Add bike</button>
+      </div>
+      <div class="hero-right">
+        <img src="assets/images/bike.png" alt="BikeShare logo" class="logo">
+        <div class="profile-stats">
+          <i class="pi pi-user avatar"></i>
+          <span class="username">user</span>
+          <div class="rating">
+            <i class="pi pi-star-fill" *ngFor="let _ of [1,2,3,4,5]"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <h2>HAS RECORRIDO</h2>
+      <div class="track">
+        <span class="distance">{{ distanceTraveled }} M</span>
+      </div>
+      <p class="since-member">desde que eres miembro</p>
+    </section>
+
+
+
+    <section class="rentals">
+      <h3>Rentals</h3>
+      <table>
+        <thead>
+        <tr>
+          <th>Bike</th>
+          <th>Departure Date</th>
+          <th>Departure Station</th>
+          <th>Return Date</th>
+          <th>Return Station</th>
+          <th>Duration</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let rent of rentals">
+          <td>{{ rent.bike }}</td>
+          <td>{{ rent.departureDate }}</td>
+          <td>{{ rent.departureStation }}</td>
+          <td>{{ rent.returnDate }}</td>
+          <td>{{ rent.returnStation }}</td>
+          <td>{{ rent.duration }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</div>

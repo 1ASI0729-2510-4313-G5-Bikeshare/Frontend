@@ -1,0 +1,65 @@
+.home-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: #FFD59E;
+  padding: 20px;
+}
+.sidebar .logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar li { margin: 16px 0; }
+.sidebar a { text-decoration: none; color: #333; }
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.hero .btn-find {
+  background: #6E9CE9;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.stats {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.stats .track {
+  height: 60px;
+  border: 3px dashed #999;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.stats .distance {
+  font-size: 24px; font-weight: bold;
+}
+.stats .since-member { color: #888; }
+
+.rentals table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.rentals th, .rentals td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
